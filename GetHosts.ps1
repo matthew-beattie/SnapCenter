@@ -84,8 +84,8 @@ If([String]::IsNullOrEmpty($Token)){
 #'Enumerate the SnapCenter Hosts.
 #'------------------------------------------------------------------------------
 [String]$command = "Get-NrHosts -Hostname $Hostname "
-If($PorNumber){
-   [String]$command += "-PorNumber $PorNumber "
+If($PortNumber){
+   [String]$command += "-PortNumber $PortNumber "
 }
 If($PluginInfo){
    [String]$command += "-PluginInfo '$PluginInfo' "
